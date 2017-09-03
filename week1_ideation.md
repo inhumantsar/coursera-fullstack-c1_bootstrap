@@ -14,7 +14,7 @@ Subscribe to physical prints from Instagram feeds and/or other photosharing site
 
 ## Market Survey
 
-### [ChatBookm](https://chatbooks.com/)
+### [ChatBooks](https://chatbooks.com/)
 * Helps users build and print small photobooks.
 * Is not 100% automatic.
 * Requires an app
