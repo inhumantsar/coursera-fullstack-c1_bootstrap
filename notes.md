@@ -164,7 +164,7 @@ Layers:
 * `data-toggle`, `data-target`, `data-spy`
 
 
-## Tabs and Pills
+### Tabs and Pills
 * Usable tabbed navigation anywhere.
 * Outer `ul`: `.nav .nav-tabs|.nav-pills`
 * Inner `li`'s: `.nav-link role="tab" data-toggle="tab" href="#target"`, optionally `.active`
@@ -176,7 +176,7 @@ Layers:
       * Start shown: `.show` `.active`
       *
 
-## Collapse and Accordion
+### Collapse and Accordion
 * Toggle content visibility using a button or link
 * Outer `div`: `#target role="tablist"`
 * Inner `div`'s:
@@ -184,7 +184,31 @@ Layers:
   * Toggle link/header: `data-toggle="collapse" data-parent="#target" href="#content"`
   * Content `div`: `#content .collapse role="tabpanel"`
     * Wraps normal inner divs (eg: `.card-block`)
-`
+
+### Tooltips
+* Link with `data-toggle="tooltip" data-html="true" title="<tooltip text>"`
+  * Modifiers: `data-placement="<placement>"`
+  * Requires:
+    ```javascript
+    <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+         });
+    </script>
+    ```
+
+### Modals
+* Trigger link: `data-toggle="modal" data-target="#target"`
+* Outer `div`: `.modal role="dialog"`
+* Inner `div`'s:
+  * Wrapper: `.modal-dialog .modal-<size> role="content"`
+  * Content: `.modal-content`
+      * `.modal-header`
+        * `h#.modal-title`
+        * Close button: `<button type="button" class="close" data-dismiss="modal">&times;</button>`
+      * `.modal-body`
+      * `.modal-footer`
+
 
 ## Misc Modifiers
 * `bg-<colour>` - sets background color to the named Bootstrap colour
