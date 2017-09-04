@@ -178,7 +178,12 @@ Layers:
 
 ## Collapse and Accordion
 * Toggle content visibility using a button or link
-*
+* Outer `div`: `#target role="tablist"`
+* Inner `div`'s:
+  * Container (eg: `.card`)
+  * Toggle link/header: `data-toggle="collapse" data-parent="#target" href="#content"`
+  * Content `div`: `#content .collapse role="tabpanel"`
+    * Wraps normal inner divs (eg: `.card-block`)
 `
 
 ## Misc Modifiers
