@@ -156,5 +156,30 @@ Layers:
 * `.badge` to create superscript tags on blocks.
 * `.badge-pill` to give it a button like background
 
+
+## Bootstrap Javascript Components
+* JQuery-based plugin system
+* Designed to encapsulate functionality into reuable components
+* Included at the bottom (preferably from a CDN) with the jquery, tether, and bootstrap imports.
+* `data-toggle`, `data-target`, `data-spy`
+
+
+## Tabs and Pills
+* Usable tabbed navigation anywhere.
+* Outer `ul`: `.nav .nav-tabs|.nav-pills`
+* Inner `li`'s: `.nav-link role="tab" data-toggle="tab" href="#target"`, optionally `.active`
+* Content `div`'s:
+  * Outer: `.tab-content`
+  * Inner: `role="tabpanel" .tab-pane`.
+    * Modifiers:
+      * Animations. eg: `fade`
+      * Start shown: `.show` `.active`
+      *
+
+## Collapse and Accordion
+* Toggle content visibility using a button or link
+*
+`
+
 ## Misc Modifiers
 * `bg-<colour>` - sets background color to the named Bootstrap colour
