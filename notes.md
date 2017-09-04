@@ -209,6 +209,13 @@ Layers:
       * `.modal-body`
       * `.modal-footer`
 
+## Carousel
+* Outer `div`: `.carousel data-ride="carousel"`
+* Innter `div`: `.carousel-inner role="listbox"`
+* Content `div`'s: `.carousel-item` optionally `.active`
+* Indicator `ol`: `li`'s: `data-target="#target" data-slide-to="#"`
+* Control links: `.carousel-control-prev|next href="#target"`
+  * Inner `span`: `.carousel-control-[prev|next]-icon`
 
 ## Misc Modifiers
 * `bg-<colour>` - sets background color to the named Bootstrap colour
