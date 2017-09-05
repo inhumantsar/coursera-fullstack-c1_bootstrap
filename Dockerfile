@@ -6,7 +6,12 @@ EXPOSE 3001
 
 
 RUN apt-get update && apt-get install -y \
-  vim 
+  vim
 
+RUN npm install -g \
+  less \
+  copyfiles \
+  grunt-cli \
+  gulp-cli
 
 CMD /bin/bash
